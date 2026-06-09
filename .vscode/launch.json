@@ -1,0 +1,24 @@
+{
+    "configurations": [
+        {
+            "type": "swift",
+            "request": "launch",
+            "args": [],
+            "cwd": "${workspaceFolder:ClipboardHistoryApp 2}",
+            "name": "Debug ClipboardHistoryApp",
+            "target": "ClipboardHistoryApp",
+            "configuration": "debug",
+            "preLaunchTask": "swift: Build Debug ClipboardHistoryApp"
+        },
+        {
+            "type": "swift",
+            "request": "launch",
+            "args": [],
+            "cwd": "${workspaceFolder:ClipboardHistoryApp 2}",
+            "name": "Release ClipboardHistoryApp",
+            "target": "ClipboardHistoryApp",
+            "configuration": "release",
+            "preLaunchTask": "swift: Build Release ClipboardHistoryApp"
+        }
+    ]
+}

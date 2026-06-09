@@ -1,0 +1,81 @@
+client:
+  name: basic
+  file-system: device-agnostic
+tools: {}
+targets:
+  "ClipboardHistoryApp-arm64-apple-macosx14.0-debug.exe": ["<ClipboardHistoryApp-arm64-apple-macosx14.0-debug.exe>"]
+  "ClipboardHistoryApp-arm64-apple-macosx14.0-debug.module": ["<ClipboardHistoryApp-arm64-apple-macosx14.0-debug.module>"]
+  "PackageStructure": ["<PackageStructure>"]
+  "main": ["<ClipboardHistoryApp-arm64-apple-macosx14.0-debug.exe>","<ClipboardHistoryApp-arm64-apple-macosx14.0-debug.module>"]
+  "test": ["<ClipboardHistoryApp-arm64-apple-macosx14.0-debug.exe>","<ClipboardHistoryApp-arm64-apple-macosx14.0-debug.module>"]
+default: "main"
+nodes:
+  "/Users/ming/Desktop/Ming/VideCoding_Tools/ClipboardHistoryApp 2/Sources/":
+    is-directory-structure: true
+    content-exclusion-patterns: [".git",".build"]
+  "/Users/ming/Desktop/Ming/VideCoding_Tools/ClipboardHistoryApp 2/.build/arm64-apple-macosx/debug/ClipboardHistoryApp":
+    is-mutated: true
+commands:
+  "/Users/ming/Desktop/Ming/VideCoding_Tools/ClipboardHistoryApp 2/.build/arm64-apple-macosx/debug/ClipboardHistoryApp-entitlement.plist":
+    tool: write-auxiliary-file
+    inputs: ["<entitlement-plist>","<com.apple.security.get-task-allow>"]
+    outputs: ["/Users/ming/Desktop/Ming/VideCoding_Tools/ClipboardHistoryApp 2/.build/arm64-apple-macosx/debug/ClipboardHistoryApp-entitlement.plist"]
+    description: "Write auxiliary file /Users/ming/Desktop/Ming/VideCoding_Tools/ClipboardHistoryApp 2/.build/arm64-apple-macosx/debug/ClipboardHistoryApp-entitlement.plist"
+
+  "/Users/ming/Desktop/Ming/VideCoding_Tools/ClipboardHistoryApp 2/.build/arm64-apple-macosx/debug/ClipboardHistoryApp.build/sources":
+    tool: write-auxiliary-file
+    inputs: ["<sources-file-list>","/Users/ming/Desktop/Ming/VideCoding_Tools/ClipboardHistoryApp 2/Sources/ClipboardHistoryView.swift","/Users/ming/Desktop/Ming/VideCoding_Tools/ClipboardHistoryApp 2/Sources/ClipboardManager.swift","/Users/ming/Desktop/Ming/VideCoding_Tools/ClipboardHistoryApp 2/Sources/NSColor+Extensions.swift","/Users/ming/Desktop/Ming/VideCoding_Tools/ClipboardHistoryApp 2/Sources/main.swift"]
+    outputs: ["/Users/ming/Desktop/Ming/VideCoding_Tools/ClipboardHistoryApp 2/.build/arm64-apple-macosx/debug/ClipboardHistoryApp.build/sources"]
+    description: "Write auxiliary file /Users/ming/Desktop/Ming/VideCoding_Tools/ClipboardHistoryApp 2/.build/arm64-apple-macosx/debug/ClipboardHistoryApp.build/sources"
+
+  "/Users/ming/Desktop/Ming/VideCoding_Tools/ClipboardHistoryApp 2/.build/arm64-apple-macosx/debug/ClipboardHistoryApp.product/Objects.LinkFileList":
+    tool: write-auxiliary-file
+    inputs: ["<link-file-list>","/Users/ming/Desktop/Ming/VideCoding_Tools/ClipboardHistoryApp 2/.build/arm64-apple-macosx/debug/ClipboardHistoryApp.build/ClipboardHistoryView.swift.o","/Users/ming/Desktop/Ming/VideCoding_Tools/ClipboardHistoryApp 2/.build/arm64-apple-macosx/debug/ClipboardHistoryApp.build/ClipboardManager.swift.o","/Users/ming/Desktop/Ming/VideCoding_Tools/ClipboardHistoryApp 2/.build/arm64-apple-macosx/debug/ClipboardHistoryApp.build/NSColor+Extensions.swift.o","/Users/ming/Desktop/Ming/VideCoding_Tools/ClipboardHistoryApp 2/.build/arm64-apple-macosx/debug/ClipboardHistoryApp.build/main.swift.o"]
+    outputs: ["/Users/ming/Desktop/Ming/VideCoding_Tools/ClipboardHistoryApp 2/.build/arm64-apple-macosx/debug/ClipboardHistoryApp.product/Objects.LinkFileList"]
+    description: "Write auxiliary file /Users/ming/Desktop/Ming/VideCoding_Tools/ClipboardHistoryApp 2/.build/arm64-apple-macosx/debug/ClipboardHistoryApp.product/Objects.LinkFileList"
+
+  "/Users/ming/Desktop/Ming/VideCoding_Tools/ClipboardHistoryApp 2/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt":
+    tool: write-auxiliary-file
+    inputs: ["<swift-get-version>","/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"]
+    outputs: ["/Users/ming/Desktop/Ming/VideCoding_Tools/ClipboardHistoryApp 2/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"]
+    always-out-of-date: "true"
+    description: "Write auxiliary file /Users/ming/Desktop/Ming/VideCoding_Tools/ClipboardHistoryApp 2/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
+
+  "<ClipboardHistoryApp-arm64-apple-macosx14.0-debug.exe>":
+    tool: phony
+    inputs: ["<ClipboardHistoryApp-arm64-apple-macosx14.0-debug.exe-CodeSigning>"]
+    outputs: ["<ClipboardHistoryApp-arm64-apple-macosx14.0-debug.exe>"]
+
+  "<ClipboardHistoryApp-arm64-apple-macosx14.0-debug.module>":
+    tool: phony
+    inputs: ["/Users/ming/Desktop/Ming/VideCoding_Tools/ClipboardHistoryApp 2/.build/arm64-apple-macosx/debug/ClipboardHistoryApp.build/ClipboardHistoryView.swift.o","/Users/ming/Desktop/Ming/VideCoding_Tools/ClipboardHistoryApp 2/.build/arm64-apple-macosx/debug/ClipboardHistoryApp.build/ClipboardManager.swift.o","/Users/ming/Desktop/Ming/VideCoding_Tools/ClipboardHistoryApp 2/.build/arm64-apple-macosx/debug/ClipboardHistoryApp.build/NSColor+Extensions.swift.o","/Users/ming/Desktop/Ming/VideCoding_Tools/ClipboardHistoryApp 2/.build/arm64-apple-macosx/debug/ClipboardHistoryApp.build/main.swift.o","/Users/ming/Desktop/Ming/VideCoding_Tools/ClipboardHistoryApp 2/.build/arm64-apple-macosx/debug/Modules/ClipboardHistoryApp.swiftmodule"]
+    outputs: ["<ClipboardHistoryApp-arm64-apple-macosx14.0-debug.module>"]
+
+  "C.ClipboardHistoryApp-arm64-apple-macosx14.0-debug.exe":
+    tool: shell
+    inputs: ["/Users/ming/Desktop/Ming/VideCoding_Tools/ClipboardHistoryApp 2/.build/arm64-apple-macosx/debug/ClipboardHistoryApp.build/ClipboardHistoryView.swift.o","/Users/ming/Desktop/Ming/VideCoding_Tools/ClipboardHistoryApp 2/.build/arm64-apple-macosx/debug/ClipboardHistoryApp.build/ClipboardManager.swift.o","/Users/ming/Desktop/Ming/VideCoding_Tools/ClipboardHistoryApp 2/.build/arm64-apple-macosx/debug/ClipboardHistoryApp.build/NSColor+Extensions.swift.o","/Users/ming/Desktop/Ming/VideCoding_Tools/ClipboardHistoryApp 2/.build/arm64-apple-macosx/debug/ClipboardHistoryApp.build/main.swift.o","/Users/ming/Desktop/Ming/VideCoding_Tools/ClipboardHistoryApp 2/.build/arm64-apple-macosx/debug/ClipboardHistoryApp.product/Objects.LinkFileList"]
+    outputs: ["/Users/ming/Desktop/Ming/VideCoding_Tools/ClipboardHistoryApp 2/.build/arm64-apple-macosx/debug/ClipboardHistoryApp"]
+    description: "Linking ./.build/arm64-apple-macosx/debug/ClipboardHistoryApp"
+    args: ["/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc","-L","/Users/ming/Desktop/Ming/VideCoding_Tools/ClipboardHistoryApp 2/.build/arm64-apple-macosx/debug","-o","/Users/ming/Desktop/Ming/VideCoding_Tools/ClipboardHistoryApp 2/.build/arm64-apple-macosx/debug/ClipboardHistoryApp","-module-name","ClipboardHistoryApp","-Xlinker","-no_warn_duplicate_libraries","-emit-executable","-Xlinker","-alias","-Xlinker","_ClipboardHistoryApp_main","-Xlinker","_main","-Xlinker","-rpath","-Xlinker","@loader_path","@/Users/ming/Desktop/Ming/VideCoding_Tools/ClipboardHistoryApp 2/.build/arm64-apple-macosx/debug/ClipboardHistoryApp.product/Objects.LinkFileList","-Xlinker","-rpath","-Xlinker","/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift-5.5/macosx","-target","arm64-apple-macosx11.0","-Xlinker","-add_ast_path","-Xlinker","/Users/ming/Desktop/Ming/VideCoding_Tools/ClipboardHistoryApp 2/.build/arm64-apple-macosx/debug/Modules/ClipboardHistoryApp.swiftmodule","-sdk","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-I","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-L","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-g"]
+
+  "C.ClipboardHistoryApp-arm64-apple-macosx14.0-debug.exe-entitlements":
+    tool: shell
+    inputs: ["/Users/ming/Desktop/Ming/VideCoding_Tools/ClipboardHistoryApp 2/.build/arm64-apple-macosx/debug/ClipboardHistoryApp","/Users/ming/Desktop/Ming/VideCoding_Tools/ClipboardHistoryApp 2/.build/arm64-apple-macosx/debug/ClipboardHistoryApp-entitlement.plist"]
+    outputs: ["<ClipboardHistoryApp-arm64-apple-macosx14.0-debug.exe-CodeSigning>"]
+    description: "Applying debug entitlements to ./.build/arm64-apple-macosx/debug/ClipboardHistoryApp"
+    args: ["codesign","--force","--sign","-","--entitlements","/Users/ming/Desktop/Ming/VideCoding_Tools/ClipboardHistoryApp 2/.build/arm64-apple-macosx/debug/ClipboardHistoryApp-entitlement.plist","/Users/ming/Desktop/Ming/VideCoding_Tools/ClipboardHistoryApp 2/.build/arm64-apple-macosx/debug/ClipboardHistoryApp"]
+
+  "C.ClipboardHistoryApp-arm64-apple-macosx14.0-debug.module":
+    tool: shell
+    inputs: ["/Users/ming/Desktop/Ming/VideCoding_Tools/ClipboardHistoryApp 2/Sources/ClipboardHistoryView.swift","/Users/ming/Desktop/Ming/VideCoding_Tools/ClipboardHistoryApp 2/Sources/ClipboardManager.swift","/Users/ming/Desktop/Ming/VideCoding_Tools/ClipboardHistoryApp 2/Sources/NSColor+Extensions.swift","/Users/ming/Desktop/Ming/VideCoding_Tools/ClipboardHistoryApp 2/Sources/main.swift","/Users/ming/Desktop/Ming/VideCoding_Tools/ClipboardHistoryApp 2/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt","/Users/ming/Desktop/Ming/VideCoding_Tools/ClipboardHistoryApp 2/.build/arm64-apple-macosx/debug/ClipboardHistoryApp.build/sources"]
+    outputs: ["/Users/ming/Desktop/Ming/VideCoding_Tools/ClipboardHistoryApp 2/.build/arm64-apple-macosx/debug/ClipboardHistoryApp.build/ClipboardHistoryView.swift.o","/Users/ming/Desktop/Ming/VideCoding_Tools/ClipboardHistoryApp 2/.build/arm64-apple-macosx/debug/ClipboardHistoryApp.build/ClipboardManager.swift.o","/Users/ming/Desktop/Ming/VideCoding_Tools/ClipboardHistoryApp 2/.build/arm64-apple-macosx/debug/ClipboardHistoryApp.build/NSColor+Extensions.swift.o","/Users/ming/Desktop/Ming/VideCoding_Tools/ClipboardHistoryApp 2/.build/arm64-apple-macosx/debug/ClipboardHistoryApp.build/main.swift.o","/Users/ming/Desktop/Ming/VideCoding_Tools/ClipboardHistoryApp 2/.build/arm64-apple-macosx/debug/Modules/ClipboardHistoryApp.swiftmodule"]
+    description: "Compiling Swift Module 'ClipboardHistoryApp' (4 sources)"
+    args: ["/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc","-module-name","ClipboardHistoryApp","-emit-dependencies","-emit-module","-emit-module-path","/Users/ming/Desktop/Ming/VideCoding_Tools/ClipboardHistoryApp 2/.build/arm64-apple-macosx/debug/Modules/ClipboardHistoryApp.swiftmodule","-output-file-map","/Users/ming/Desktop/Ming/VideCoding_Tools/ClipboardHistoryApp 2/.build/arm64-apple-macosx/debug/ClipboardHistoryApp.build/output-file-map.json","-incremental","-c","@/Users/ming/Desktop/Ming/VideCoding_Tools/ClipboardHistoryApp 2/.build/arm64-apple-macosx/debug/ClipboardHistoryApp.build/sources","-I","/Users/ming/Desktop/Ming/VideCoding_Tools/ClipboardHistoryApp 2/.build/arm64-apple-macosx/debug/Modules","-target","arm64-apple-macosx11.0","-enable-batch-mode","-index-store-path","/Users/ming/Desktop/Ming/VideCoding_Tools/ClipboardHistoryApp 2/.build/arm64-apple-macosx/debug/index/store","-Onone","-enable-testing","-j12","-DSWIFT_PACKAGE","-DDEBUG","-module-cache-path","/Users/ming/Desktop/Ming/VideCoding_Tools/ClipboardHistoryApp 2/.build/arm64-apple-macosx/debug/ModuleCache","-parseable-output","-Xfrontend","-entry-point-function-name","-Xfrontend","ClipboardHistoryApp_main","-color-diagnostics","-swift-version","5","-sdk","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-I","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-L","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-g","-Xcc","-isysroot","-Xcc","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk","-Xcc","-F","-Xcc","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-Xcc","-fPIC","-Xcc","-g"]
+
+  "PackageStructure":
+    tool: package-structure-tool
+    inputs: ["/Users/ming/Desktop/Ming/VideCoding_Tools/ClipboardHistoryApp 2/Sources/","/Users/ming/Desktop/Ming/VideCoding_Tools/ClipboardHistoryApp 2/Package.swift","/Users/ming/Desktop/Ming/VideCoding_Tools/ClipboardHistoryApp 2/Package.resolved"]
+    outputs: ["<PackageStructure>"]
+    description: "Planning build"
+    allow-missing-inputs: true
+

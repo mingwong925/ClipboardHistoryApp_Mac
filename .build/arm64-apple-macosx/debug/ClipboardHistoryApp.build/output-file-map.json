@@ -1,0 +1,29 @@
+{
+  "": {
+    "swift-dependencies": "/Users/ming/Desktop/Ming/VideCoding_Tools/ClipboardHistoryApp 2/.build/arm64-apple-macosx/debug/ClipboardHistoryApp.build/master.swiftdeps"
+  },
+  "/Users/ming/Desktop/Ming/VideCoding_Tools/ClipboardHistoryApp 2/Sources/ClipboardHistoryView.swift": {
+    "dependencies": "/Users/ming/Desktop/Ming/VideCoding_Tools/ClipboardHistoryApp 2/.build/arm64-apple-macosx/debug/ClipboardHistoryApp.build/ClipboardHistoryView.d",
+    "object": "/Users/ming/Desktop/Ming/VideCoding_Tools/ClipboardHistoryApp 2/.build/arm64-apple-macosx/debug/ClipboardHistoryApp.build/ClipboardHistoryView.swift.o",
+    "swiftmodule": "/Users/ming/Desktop/Ming/VideCoding_Tools/ClipboardHistoryApp 2/.build/arm64-apple-macosx/debug/ClipboardHistoryApp.build/ClipboardHistoryView~partial.swiftmodule",
+    "swift-dependencies": "/Users/ming/Desktop/Ming/VideCoding_Tools/ClipboardHistoryApp 2/.build/arm64-apple-macosx/debug/ClipboardHistoryApp.build/ClipboardHistoryView.swiftdeps"
+  },
+  "/Users/ming/Desktop/Ming/VideCoding_Tools/ClipboardHistoryApp 2/Sources/ClipboardManager.swift": {
+    "dependencies": "/Users/ming/Desktop/Ming/VideCoding_Tools/ClipboardHistoryApp 2/.build/arm64-apple-macosx/debug/ClipboardHistoryApp.build/ClipboardManager.d",
+    "object": "/Users/ming/Desktop/Ming/VideCoding_Tools/ClipboardHistoryApp 2/.build/arm64-apple-macosx/debug/ClipboardHistoryApp.build/ClipboardManager.swift.o",
+    "swiftmodule": "/Users/ming/Desktop/Ming/VideCoding_Tools/ClipboardHistoryApp 2/.build/arm64-apple-macosx/debug/ClipboardHistoryApp.build/ClipboardManager~partial.swiftmodule",
+    "swift-dependencies": "/Users/ming/Desktop/Ming/VideCoding_Tools/ClipboardHistoryApp 2/.build/arm64-apple-macosx/debug/ClipboardHistoryApp.build/ClipboardManager.swiftdeps"
+  },
+  "/Users/ming/Desktop/Ming/VideCoding_Tools/ClipboardHistoryApp 2/Sources/NSColor+Extensions.swift": {
+    "dependencies": "/Users/ming/Desktop/Ming/VideCoding_Tools/ClipboardHistoryApp 2/.build/arm64-apple-macosx/debug/ClipboardHistoryApp.build/NSColor+Extensions.d",
+    "object": "/Users/ming/Desktop/Ming/VideCoding_Tools/ClipboardHistoryApp 2/.build/arm64-apple-macosx/debug/ClipboardHistoryApp.build/NSColor+Extensions.swift.o",
+    "swiftmodule": "/Users/ming/Desktop/Ming/VideCoding_Tools/ClipboardHistoryApp 2/.build/arm64-apple-macosx/debug/ClipboardHistoryApp.build/NSColor+Extensions~partial.swiftmodule",
+    "swift-dependencies": "/Users/ming/Desktop/Ming/VideCoding_Tools/ClipboardHistoryApp 2/.build/arm64-apple-macosx/debug/ClipboardHistoryApp.build/NSColor+Extensions.swiftdeps"
+  },
+  "/Users/ming/Desktop/Ming/VideCoding_Tools/ClipboardHistoryApp 2/Sources/main.swift": {
+    "dependencies": "/Users/ming/Desktop/Ming/VideCoding_Tools/ClipboardHistoryApp 2/.build/arm64-apple-macosx/debug/ClipboardHistoryApp.build/main.d",
+    "object": "/Users/ming/Desktop/Ming/VideCoding_Tools/ClipboardHistoryApp 2/.build/arm64-apple-macosx/debug/ClipboardHistoryApp.build/main.swift.o",
+    "swiftmodule": "/Users/ming/Desktop/Ming/VideCoding_Tools/ClipboardHistoryApp 2/.build/arm64-apple-macosx/debug/ClipboardHistoryApp.build/main~partial.swiftmodule",
+    "swift-dependencies": "/Users/ming/Desktop/Ming/VideCoding_Tools/ClipboardHistoryApp 2/.build/arm64-apple-macosx/debug/ClipboardHistoryApp.build/main.swiftdeps"
+  }
+}
